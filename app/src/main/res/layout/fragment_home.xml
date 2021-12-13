@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical"
+    android:theme="@style/Theme.Final"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/main_layout"
+        android:layout_width="412dp"
+        android:layout_height="662dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/linkfitner"
+            android:layout_width="110dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/linkfitnerplus" />
+
+        <ImageView
+            android:id="@+id/find"
+            android:layout_width="23dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/find" />
+
+        <ImageView
+            android:id="@+id/alarm"
+            android:layout_width="21dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="375dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/alarm" />
+
+        <ImageView
+            android:id="@+id/linkfitpartner"
+            android:layout_width="266dp"
+            android:layout_height="172dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/linkfitpartner" />
+
+        <ImageButton
+            android:id="@+id/welcome"
+            android:layout_width="212dp"
+            android:layout_height="133dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="150dp"
+            android:padding="0sp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/welcome"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/partnersearch"
+            android:layout_width="135dp"
+            android:layout_height="133dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="150dp"
+            android:padding="0sp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/partnersearch"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/mainsq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            app:srcCompat="@drawable/mainsq" />
+
+        <TextView
+            android:id="@+id/famous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="335dp"
+            android:text="인기 파트너"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="335dp"
+            android:text="더보기"
+            android:textColor="#707070" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerMember"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="360dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/member_item" />
+
+        <ImageView
+            android:id="@+id/mainsq2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="575dp"
+            app:srcCompat="@drawable/mainsq" />
+
+        <TextView
+            android:id="@+id/recomend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="610dp"
+            android:text="원준희 님 추천 리스트"
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:id="@+id/rory"
+            android:layout_width="wrap_content"
+            android:layout_height="76dp"
+            android:layout_marginTop="630dp"
+            android:padding="0sp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/rory"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </FrameLayout>
+
+</RelativeLayout>

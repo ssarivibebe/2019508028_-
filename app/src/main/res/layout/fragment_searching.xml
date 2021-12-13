@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".SearchingFragment">
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nanumbold"
+        android:text="카테고리별 파트너"
+        android:textColor="@color/black"
+        android:textSize="25dp"></TextView>
+
+    <ImageButton
+        android:id="@+id/all"
+        android:layout_width="66dp"
+        android:layout_height="27dp"
+        android:layout_below="@id/category"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="0sp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/all"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,DuplicateClickableBoundsCheck" />
+
+    <ImageButton
+        android:id="@+id/it"
+        android:layout_width="66dp"
+        android:layout_height="27dp"
+        android:layout_below="@id/category"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/all"
+        android:background="#FFFFFF"
+        android:padding="0sp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/it"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/design"
+        android:layout_width="66dp"
+        android:layout_height="27dp"
+        android:layout_below="@id/category"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/it"
+        android:background="#FFFFFF"
+        android:padding="0sp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/design"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/ad"
+        android:layout_width="66dp"
+        android:layout_height="27dp"
+        android:layout_below="@id/category"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="55dp"
+        android:layout_toRightOf="@id/design"
+        android:background="#FFFFFF"
+        android:padding="0sp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ad"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/manu"
+        android:layout_width="66dp"
+        android:layout_height="27dp"
+        android:layout_below="@id/category"
+        android:layout_marginLeft="-229dp"
+        android:layout_marginTop="90dp"
+        android:layout_toRightOf="@id/ad"
+        android:background="#FFFFFF"
+        android:padding="0sp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/manu"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/lawarea"
+        android:layout_width="66dp"
+        android:layout_height="27dp"
+        android:layout_below="@id/all"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:padding="0sp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/lawarea"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/manage"
+        android:layout_width="83dp"
+        android:layout_height="33dp"
+        android:layout_below="@id/all"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/lawarea"
+        android:background="#FFFFFF"
+        android:padding="0sp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/manage"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/op"
+        android:layout_width="66dp"
+        android:layout_height="27dp"
+        android:layout_below="@id/all"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/manage"
+        android:background="#FFFFFF"
+        android:padding="0sp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/op"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/pm"
+        android:layout_width="83dp"
+        android:layout_height="33dp"
+        android:layout_below="@id/all"
+        android:layout_marginLeft="-23dp"
+        android:layout_marginTop="-31dp"
+        android:layout_toRightOf="@id/op"
+        android:background="#FFFFFF"
+        android:padding="0sp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pm"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/invest"
+        android:layout_width="66dp"
+        android:layout_height="27dp"
+        android:layout_below="@id/lawarea"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:padding="0sp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/invest"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/ect"
+        android:layout_width="51dp"
+        android:layout_height="27dp"
+        android:layout_below="@id/lawarea"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/invest"
+        android:background="#FFFFFF"
+        android:padding="0sp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ect"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/co"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invest"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/nanumbold"
+        android:text="기업"
+        android:textColor="#40000000"
+        android:textSize="17dp"></TextView>
+
+    <TextView
+        android:id="@+id/pers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invest"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="43dp"
+        android:layout_toRightOf="@id/co"
+        android:fontFamily="@font/nanumbold"
+        android:text="개인"
+        android:textColor="@color/black"
+        android:textSize="17dp"></TextView>
+
+    <ImageView
+        android:id="@+id/recoline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pers"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/recoline" />
+
+    <ImageButton
+        android:id="@+id/normal"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ect"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:background="#FFFFFF"
+        android:padding="0sp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/normal"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMember"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@id/normal"
+        android:layout_marginTop="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/member_item" />
+
+</RelativeLayout>

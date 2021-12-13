@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        tools:context=".MyPageFragment">
+
+        <TextView
+            android:id="@+id/my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nanumbold"
+            android:text="마이페이지"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="26dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="22dp"
+            android:src="@drawable/edit" />
+
+        <ImageView
+            android:id="@+id/mypic"
+            android:layout_width="84dp"
+            android:layout_height="82dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/mypic" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="165dp"
+            android:fontFamily="@font/nanumextrabold"
+            android:text="원준희"
+            android:textColor="@color/black"
+            android:textSize="15dp"></TextView>
+
+        <TextView
+            android:id="@+id/company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="190dp"
+            android:fontFamily="@font/nanumbold"
+            android:text="링파트너"
+            android:textColor="#878686"
+            android:textSize="12dp"></TextView>
+
+        <TextView
+            android:id="@+id/partnerlink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="225dp"
+            android:fontFamily="@font/nanumextrabold"
+            android:text="파트너 연결 관리"
+            android:textColor="@color/black"
+            android:textSize="15dp"></TextView>
+
+        <ImageButton
+            android:id="@+id/receivems"
+            android:layout_width="48dp"
+            android:layout_height="56dp"
+            android:layout_below="@id/partnerlink"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:background="#FFFFFF"
+            android:padding="0sp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/receivems"
+            tools:ignore="SpeakableTextPresentCheck,DuplicateClickableBoundsCheck" />
+
+        <ImageButton
+            android:id="@+id/sendms"
+            android:layout_width="48dp"
+            android:layout_height="56dp"
+            android:layout_below="@id/partnerlink"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/receivems"
+            android:background="#FFFFFF"
+            android:padding="0sp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sendms"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/mypagelist"
+            android:layout_width="match_parent"
+            android:layout_height="273dp"
+            android:layout_below="@id/pieView"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/mypagelist" />
+
+        <com.jh.afinal.PieView
+            android:id="@+id/pieView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/sendms"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+    </RelativeLayout>
+
+</ScrollView>
